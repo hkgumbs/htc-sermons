@@ -1,3 +1,4 @@
 .bundle/
+assets/
 vendor/
 Gemfile.lock
