@@ -32,7 +32,7 @@ def get_sermons(browser)
         image:    $heading[:image] || maybe(el.img, :src),
         title:    el.header.h3.a.text,
         time:     el.header.p(class: 'time').text,
-        href:     el.header.ul.li(class: 'download').a.href,
+        href:     maybe(el.header.ul.li(class: 'download').a, :href),
         preacher: maybe(el.header.p(class: 'meta', text: /Preacher/), :text),
       }
     end
