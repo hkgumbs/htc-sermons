@@ -47,4 +47,4 @@ end
 # MAIN
 
 Watir::Browser.new(:chrome, headless: true).tap { |browser| run browser }
-File.open('assets/sermons.json', 'w') { |f| f.write($sermons.to_json) }
+File.open('build/sermons.json', 'w') { |f| f.write($sermons.to_json) }

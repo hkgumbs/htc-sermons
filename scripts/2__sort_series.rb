@@ -41,7 +41,7 @@ def download(url, file)
 end
 
 def series_dir(name)
-  "assets/#{name.gsub(/[^0-9A-Za-z.\-]/, '_')}"
+  "build/#{name.gsub(/[^0-9A-Za-z.\-]/, '_')}"
 end
 
 def image_file(series, name)
@@ -82,4 +82,4 @@ end
 
 # MAIN
 
-run JSON.parse(File.read('assets/sermons.json'), symbolize_names: true)
+run JSON.parse(File.read('build/sermons.json'), symbolize_names: true)

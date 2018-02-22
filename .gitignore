@@ -1,4 +1,4 @@
 .bundle/
-assets/
+build/
 vendor/
 Gemfile.lock
